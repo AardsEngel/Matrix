@@ -1,7 +1,7 @@
 {
-  "name": "ContinentalFaucet",
-  "short_name": "CF",
-  "description": "Faucet dedicated to distributing tokens in the MintMe eco-system.",
+  "name": "CryptoMatrix",
+  "short_name": "CM",
+  "description": "BETA.",
   "icons": [
     {
       "src": "images/manifest/icon-192x192.png",

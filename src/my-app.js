@@ -147,8 +147,6 @@ class MyApp extends PolymerElement {
 
       <block-provider provider="{{web}}" metamask="{{metam}}"></block-provider>
 
-      <my-miner key="30c29e13ec62201353622917ad773938512057202113b838182540ac59f725f4"></my-miner>
-
       <token-contract provider="{{web}}" address="0x8D71f14aF3c689f60d554E51e1bf3015281B0B29" supply="{{con}}"></token-contract>
 
       <faucet-contract provider="{{web}}" address="0x40f266644bbb1a7f2963ed3e2e9ea3f61ee31ed4" supply="{{confs}}" contract="{{concontract}}"></faucet-contract>
@@ -200,7 +198,7 @@ class MyApp extends PolymerElement {
         </app-header-layout>
       </app-drawer-layout>
       <div class="flex-horizontal" style="background: #212121">
-        <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Buy on MintMe</p>
+        <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Visit MafiaMatrix!</p>
         <paper-fab icon="icons:cached" on-click="openSwap"></paper-fab>
       </div>
       
@@ -226,7 +224,7 @@ class MyApp extends PolymerElement {
   }
 
   openSwap() {
-    window.open('https://www.mintme.com/token/Continental/trade', '_blank').focus();
+    window.open('http://mafiamatrix.com/signup.asp?referrer=60324', '_blank').focus();
   }
 
   reloadApp() {
