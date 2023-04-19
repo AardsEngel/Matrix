@@ -30,7 +30,6 @@ import '@polymer/paper-progress/paper-progress.js';
 import '@polymer/iron-icons/iron-icons.js';
 import './my-icons.js';
 import './mint/block-provider.js';
-import './mint/token-cotract.js';
 import './mint/token-contract-v2.js';
 import './mint/faucet-contract.js';
 import './mint/mining-contract.js';
