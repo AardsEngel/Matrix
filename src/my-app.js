@@ -91,7 +91,7 @@ class MyApp extends PolymerElement {
           position: absolute;
           bottom: 30px;
           right: 30px;
-          background-color: #424242;
+          background-color: #042138;
           color: #eeeeee;
           border-radius: 50px;
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -104,7 +104,7 @@ class MyApp extends PolymerElement {
         }
 
         paper-fab {
-          background-color: #424242;
+          background-color: #042138;
         }
 
         .hor {
@@ -135,7 +135,7 @@ class MyApp extends PolymerElement {
           background-color: #225277;
         }
         marquee {
-          background-color: #424242;
+          background-color: #042138;
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.24), 0 3px 1px -2px rgba(0, 0, 0, 0.24);
         }
       </style>
@@ -170,12 +170,12 @@ class MyApp extends PolymerElement {
             </app-toolbar>
           </app-header>
           <paper-tabs selected="{{page}}" attr-for-selected="name" style="color: #eeeeee; height: 30px;"><paper-tab name="con-faucet" style="font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; font-size: 20px;">Continental Faucet</paper-tab></paper-tabs>
-          <marquee style="background-color: #424242; color: #eeeeee; font-family: 'Open Sans Condensed', sans-serif;"><img src="./images/continental.png" width="13px" heigth="13px" style="margin-right: 5px;">Continental - Faucet Supply: {{confs}}</marquee>
+          <marquee style="background-color: #042138; color: #eeeeee; font-family: 'Open Sans Condensed', sans-serif;"><img src="./images/continental.png" width="13px" heigth="13px" style="margin-right: 5px;">Continental - Faucet Supply: {{confs}}</marquee>
           <center>
             <template is="dom-if" if="{{!metam}}">
               <div class="cardp">
                 <p>The website requires MetaMask!</p>
-                <a href="https://metamask.io/download" style="color: #424242; font-family: 'Open Sans Condensed', sans-serif;">Download Here</a>
+                <a href="https://metamask.io/download" style="color: #042138; font-family: 'Open Sans Condensed', sans-serif;">Download Here</a>
                 <p>After installation and configuration, refresh page.</p>
               </div>
             </template>
