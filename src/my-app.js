@@ -62,7 +62,7 @@ class MyApp extends PolymerElement {
         }
 
         app-header {
-          color: #225277;
+          color: #fff;
           background-color: var(--app-primary-color);
         }
 
@@ -135,7 +135,7 @@ class MyApp extends PolymerElement {
           background-color: #225277;
         }
         marquee {
-          background-color: #fff;
+          background-color: #042138;
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.24), 0 3px 1px -2px rgba(0, 0, 0, 0.24);
         }
       </style>
