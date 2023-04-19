@@ -129,13 +129,13 @@ class MyApp extends PolymerElement {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
         }
         app-toolbar {
-          background-color: #fff;
+          background-color: #225277;
         }
         paper-tabs {
           background-color: #225277;
         }
         marquee {
-          background-color: #042138;
+          background-color: #fff;
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.24), 0 3px 1px -2px rgba(0, 0, 0, 0.24);
         }
       </style>
@@ -157,7 +157,7 @@ class MyApp extends PolymerElement {
 
           <app-header slot="header" condenses="" reveals="" effects="waterfall">
             <app-toolbar>
-              <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
+              <paper-icon-button icon="my-icons:menu" drawer-toggle="">Menu</paper-icon-button>
               <div main-title="" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 36px;">Crypto Matrix</div>
               <div class="flex"></div>
               <metamask-account provider="{{web}}" metamask="{{metam}}" account="{{acct}}"></metamask-account>
