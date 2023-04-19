@@ -132,7 +132,7 @@ class MyApp extends PolymerElement {
           background-color: #225277;
         }
         paper-tabs {
-          background-color: #225277;
+          background-color: #fff;
         }
         marquee {
           background-color: #042138;
@@ -169,8 +169,8 @@ class MyApp extends PolymerElement {
               </template>
             </app-toolbar>
           </app-header>
-          <paper-tabs selected="{{page}}" attr-for-selected="name" style="color: #eeeeee; height: 30px;"><paper-tab name="con-faucet" style="font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; font-size: 20px;">Continental Faucet</paper-tab></paper-tabs>
-          <marquee style="background-color: #042138; color: #eeeeee; font-family: 'Open Sans Condensed', sans-serif;"><img src="./images/continental.png" width="13px" heigth="13px" style="margin-right: 5px;">Continental - Faucet Supply: {{confs}}</marquee>
+          <paper-tabs selected="{{page}}" attr-for-selected="name" style="color: #eeeeee; height: 30px;"><paper-tab name="con-faucet" style="font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; font-size: 20px;">Matrix Game</paper-tab></paper-tabs>
+          <marquee style="background-color: #042138; color: #eeeeee; font-family: 'Open Sans Condensed', sans-serif;"><img src="./images/continental.png" width="13px" heigth="13px" style="margin-right: 5px;">Token Supply: {{confs}}</marquee>
           <center>
             <template is="dom-if" if="{{!metam}}">
               <div class="cardp">
