@@ -48,8 +48,8 @@ class MyApp extends PolymerElement {
     return html`
       <style>
         :host {
-          --app-primary-color: #212121;
-          --app-secondary-color: black;
+          --app-primary-color: #9aabaf;
+          --app-secondary-color: #042138;
 
           --paper-tabs-selection-bar-color: #eeeeee;
           --paper-tab-ink: #eeeeee;
@@ -129,10 +129,10 @@ class MyApp extends PolymerElement {
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
         }
         app-toolbar {
-          background-color: #212121;
+          background-color: #225277;
         }
         paper-tabs {
-          background-color: #212121;
+          background-color: #225277;
         }
         marquee {
           background-color: #424242;
