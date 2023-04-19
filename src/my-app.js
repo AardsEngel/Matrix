@@ -62,7 +62,7 @@ class MyApp extends PolymerElement {
         }
 
         app-header {
-          color: #fff;
+          color: #225277;
           background-color: var(--app-primary-color);
         }
 
