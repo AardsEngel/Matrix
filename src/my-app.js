@@ -130,15 +130,12 @@ class MyApp extends PolymerElement {
           background-color: #fff;
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
         }
-
         app-toolbar {
           background-color: #212121;
         }
-
         paper-tabs {
           background-color: #212121;
         }
-
         marquee {
           background-color: #424242;
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.24), 0 3px 1px -2px rgba(0, 0, 0, 0.24);
@@ -146,11 +143,9 @@ class MyApp extends PolymerElement {
       </style>
 
       <block-provider provider="{{web}}" metamask="{{metam}}"></block-provider>
-
       <token-contract provider="{{web}}" address="0x8D71f14aF3c689f60d554E51e1bf3015281B0B29" supply="{{con}}"></token-contract>
-
       <faucet-contract provider="{{web}}" address="0x40f266644bbb1a7f2963ed3e2e9ea3f61ee31ed4" supply="{{confs}}" contract="{{concontract}}"></faucet-contract>
-
+      
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
       </app-location>
 
@@ -165,7 +160,7 @@ class MyApp extends PolymerElement {
           <app-header slot="header" condenses="" reveals="" effects="waterfall">
             <app-toolbar>
               <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              <div main-title="" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 36px;">MintSwap Faucet</div>
+              <div main-title="" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 36px;">Crypto Matrix</div>
               <div class="flex"></div>
               <metamask-account provider="{{web}}" metamask="{{metam}}" account="{{acct}}"></metamask-account>
               <template is="dom-if" if="{{acct.0}}">
