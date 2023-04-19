@@ -42,7 +42,7 @@
            padding: 6px;
            color: #eeeeee;
            border-radius: 5px;
-           background-color: #424242;
+           background-color: #042138;
            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
            text-shadow: #000 0.1em 0.1em 0.2em;
          }
@@ -55,7 +55,7 @@
          }
        </style>
  
-       <div class="card flex-horizontal" style="font-family: 'Dosis', sans-serif; font-weight: bold; background-color: #fff;">
+       <div class="card flex-horizontal" style="font-family: 'Dosis', sans-serif; font-weight: bold; background-color: #225277;">
         <div class="card2 flex-vertical">
           <img src="./images/continental.png" width="135px" height="135px">
           <p>Crypto Matrix</p>
@@ -65,7 +65,7 @@
          <div class="flex-vertical">
            <img src="{{levelimg}}" width="115px" height="115px">
            <p>User Level: {{userlevel}}</p>
-           <paper-button on-click="buy" raised style="background-color: #042138; color: #eeeeee;">Buy Level (25 DOGE)</paper-button>
+           <paper-button on-click="buy" raised style="background-color: #042138; color: #225277;">Buy Level (25 DOGE)</paper-button>
          </div>
          <div class="flex"></div>
          <div class="flex-vertical">
@@ -82,7 +82,7 @@
          </div>
        </div>
        <center>
-       <div class="card flex-vertical" style="background-color: #042138;">
+       <div class="card flex-vertical" style="background-color: #225277;">
         <div class="flex-horizontal" style="width: 100%;">
           <div class="flex"></div>
           <p style="font-size: 12px;">25 DOGE to buy a level.</p>
@@ -92,7 +92,7 @@
           <p style="font-size: 12px;">Maximum level is 16.</p>
           <div class="flex"></div>
         </div>
-        <hr style="color: #042138; width: 100%;">
+        <hr style="color: #225277; width: 100%;">
         <div class="flex-horizontal" style="width: 100%;">
           <div class="flex"></div>
           <p style="font-size: 12px;">Level 1</p>
