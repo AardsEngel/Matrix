@@ -58,7 +58,7 @@
        <div class="card flex-horizontal" style="font-family: 'Dosis', sans-serif; font-weight: bold; background-color: #225277;">
         <div class="card2 flex-vertical">
           <img src="./images/continental.png" width="135px" height="135px">
-          <p>Crypto Matrix</p>
+          <p>Dirty Money</p>
           <paper-button style="font-size: 10px;" on-click="addToken">Add token to MetaMask</paper-button>
         </div>
          <div class="flex"></div>
@@ -87,9 +87,9 @@
           <div class="flex"></div>
           <p style="font-size: 12px;">25 DOGE to buy a level.</p>
           <div class="flex"></div>
-          <p style="font-size: 12px;">After each level the collection count resets.</p>
+          <p style="font-size: 12px;">Timer decreases as you rank up.</p>
           <div class="flex"></div>
-          <p style="font-size: 12px;">Maximum level is 16.</p>
+          <p style="font-size: 12px;">Maximum level is 10.</p>
           <div class="flex"></div>
         </div>
         <hr style="color: #225277; width: 100%;">
@@ -121,11 +121,11 @@
      super.ready();
  
      this.levelimg = './images/con_badges/1.png';
-     this.chestimg = './images/con_chest/10.png';
+     this.chestimg = './images/con_chest/1.png';
    }
 
    async addToken() {
-    var type = "ERC20"; var symbol = "Continental"; var decimals = "8"; var image = "https://i.imgur.com/VhvOAkk.png";
+    var type = "ERC20"; var symbol = "$DM"; var decimals = "8"; var image = "https://i.imgur.com/VhvOAkk.png";
     var address = "0x8D71f14aF3c689f60d554E51e1bf3015281B0B29";
     if (true) {
       window.ethereum
@@ -170,42 +170,42 @@
  
      if(this.userlevel == 1) {
        this.levelimg = './images/con-badges/1.png';
-       this.chestimg = './images/con-chest/10.png';
+       this.chestimg = './images/con-chest/1.png';
      }
      if(this.userlevel == 2) {
-        this.levelimg = './images/con-badges/1.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/2.png';
+        this.chestimg = './images/con-chest/2.png';
      }
      if(this.userlevel == 3) {
-        this.levelimg = './images/con-badges/1.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/3.png';
+        this.chestimg = './images/con-chest/3.png';
      }
      if(this.userlevel == 4) {
-        this.levelimg = './images/con-badges/1.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/4.png';
+        this.chestimg = './images/con-chest/4.png';
      }
      if(this.userlevel == 5) {
-        this.levelimg = './images/con-badges/2.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/5.png';
+        this.chestimg = './images/con-chest/5.png';
      }
      if(this.userlevel == 6) {
-        this.levelimg = './images/con-badges/2.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/6.png';
+        this.chestimg = './images/con-chest/6.png';
      }
      if(this.userlevel == 7) {
-        this.levelimg = './images/con-badges/2.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/7.png';
+        this.chestimg = './images/con-chest/7.png';
      }
      if(this.userlevel == 8) {
-        this.levelimg = './images/con-badges/2.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/8.png';
+        this.chestimg = './images/con-chest/8.png';
      }
      if(this.userlevel == 9) {
-        this.levelimg = './images/con-badges/2.png';
-        this.chestimg = './images/con-chest/10.png';
+        this.levelimg = './images/con-badges/9.png';
+        this.chestimg = './images/con-chest/9.png';
      }
      if(this.userlevel >= 10) {
-        this.levelimg = './images/con-badges/3.png';
+        this.levelimg = './images/con-badges/10.png';
         this.chestimg = './images/con-chest/10.png';
      }
  
@@ -233,45 +233,45 @@
      .call({from: this.provider.eth.defaultAccount});
  
      if(this.userlevel == 1) {
-        this.levelimg = './images/con-badges/1.png';
-        this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 2) {
-         this.levelimg = './images/con-badges/1.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 3) {
-         this.levelimg = './images/con-badges/1.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 4) {
-         this.levelimg = './images/con-badges/1.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 5) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 6) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 7) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 8) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 9) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel >= 10) {
-         this.levelimg = './images/con-badges/3.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
+      this.levelimg = './images/con-badges/1.png';
+      this.chestimg = './images/con-chest/1.png';
+    }
+    if(this.userlevel == 2) {
+       this.levelimg = './images/con-badges/2.png';
+       this.chestimg = './images/con-chest/2.png';
+    }
+    if(this.userlevel == 3) {
+       this.levelimg = './images/con-badges/3.png';
+       this.chestimg = './images/con-chest/3.png';
+    }
+    if(this.userlevel == 4) {
+       this.levelimg = './images/con-badges/4.png';
+       this.chestimg = './images/con-chest/4.png';
+    }
+    if(this.userlevel == 5) {
+       this.levelimg = './images/con-badges/5.png';
+       this.chestimg = './images/con-chest/5.png';
+    }
+    if(this.userlevel == 6) {
+       this.levelimg = './images/con-badges/6.png';
+       this.chestimg = './images/con-chest/6.png';
+    }
+    if(this.userlevel == 7) {
+       this.levelimg = './images/con-badges/7.png';
+       this.chestimg = './images/con-chest/7.png';
+    }
+    if(this.userlevel == 8) {
+       this.levelimg = './images/con-badges/8.png';
+       this.chestimg = './images/con-chest/8.png';
+    }
+    if(this.userlevel == 9) {
+       this.levelimg = './images/con-badges/9.png';
+       this.chestimg = './images/con-chest/9.png';
+    }
+    if(this.userlevel >= 10) {
+       this.levelimg = './images/con-badges/10.png';
+       this.chestimg = './images/con-chest/10.png';
+    }
  
      this.usertime = await this.contract.methods.getTimeInterval()
      .call({from: this.provider.eth.defaultAccount});
@@ -311,45 +311,45 @@
      .call({from: this.provider.eth.defaultAccount});
  
      if(this.userlevel == 1) {
-        this.levelimg = './images/con-badges/1.png';
+       this.levelimg = './images/con-badges/1.png';
+       this.chestimg = './images/con-chest/1.png';
+     }
+     if(this.userlevel == 2) {
+        this.levelimg = './images/con-badges/2.png';
+        this.chestimg = './images/con-chest/2.png';
+     }
+     if(this.userlevel == 3) {
+        this.levelimg = './images/con-badges/3.png';
+        this.chestimg = './images/con-chest/3.png';
+     }
+     if(this.userlevel == 4) {
+        this.levelimg = './images/con-badges/4.png';
+        this.chestimg = './images/con-chest/4.png';
+     }
+     if(this.userlevel == 5) {
+        this.levelimg = './images/con-badges/5.png';
+        this.chestimg = './images/con-chest/5.png';
+     }
+     if(this.userlevel == 6) {
+        this.levelimg = './images/con-badges/6.png';
+        this.chestimg = './images/con-chest/6.png';
+     }
+     if(this.userlevel == 7) {
+        this.levelimg = './images/con-badges/7.png';
+        this.chestimg = './images/con-chest/7.png';
+     }
+     if(this.userlevel == 8) {
+        this.levelimg = './images/con-badges/8.png';
+        this.chestimg = './images/con-chest/8.png';
+     }
+     if(this.userlevel == 9) {
+        this.levelimg = './images/con-badges/9.png';
+        this.chestimg = './images/con-chest/9.png';
+     }
+     if(this.userlevel >= 10) {
+        this.levelimg = './images/con-badges/10.png';
         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 2) {
-         this.levelimg = './images/con-badges/1.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 3) {
-         this.levelimg = './images/con-badges/1.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 4) {
-         this.levelimg = './images/con-badges/1.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 5) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 6) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 7) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 8) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel == 9) {
-         this.levelimg = './images/con-badges/2.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
-      if(this.userlevel >= 10) {
-         this.levelimg = './images/con-badges/3.png';
-         this.chestimg = './images/con-chest/10.png';
-      }
+     }
  
      this.usertime = await this.contract.methods.getTimeInterval()
      .call({from: this.provider.eth.defaultAccount});

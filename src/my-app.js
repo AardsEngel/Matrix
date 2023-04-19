@@ -158,7 +158,7 @@ class MyApp extends PolymerElement {
           <app-header slot="header" condenses="" reveals="" effects="waterfall">
             <app-toolbar>
               <paper-icon-button icon="my-icons:menu" drawer-toggle="on"></paper-icon-button>
-              <div main-title="" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 36px;">Dirty Money</div>
+              <div main-title="" style="font-family: 'Open Sans Condensed', sans-serif; font-size: 36px;">CryptoMatrix</div>
               <div class="flex"></div>
               <metamask-account provider="{{web}}" metamask="{{metam}}" account="{{acct}}"></metamask-account>
               <template is="dom-if" if="{{acct.0}}">
