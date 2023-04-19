@@ -35,7 +35,6 @@ import './mint/token-contract-v2.js';
 import './mint/faucet-contract.js';
 import './mint/mining-contract.js';
 import './mint/metamask-account.js';
-import './mint/my-miner.js';
 
 // Gesture events like tap and track generated from touch will not be
 // preventable, allowing for better scrolling performance.
