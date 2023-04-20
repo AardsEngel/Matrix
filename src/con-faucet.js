@@ -57,7 +57,7 @@
  
        <div class="card flex-horizontal" style="font-family: 'Dosis', sans-serif; font-weight: bold; background-color: #225277;">
         <div class="card2 flex-vertical">
-          <img src="./images/continental.png" width="135px" height="135px">
+          <img src="./images/logo.png" width="135px" height="135px">
           <p>Dirty Money</p>
           <paper-button style="font-size: 10px;" on-click="addToken">Add token to MetaMask</paper-button>
         </div>
