@@ -126,7 +126,7 @@
 
    async addToken() {
     var type = "ERC20"; var symbol = "$DM"; var decimals = "8"; var image = "https://i.imgur.com/8zi3OUL.png";
-    var address = "0x8D71f14aF3c689f60d554E51e1bf3015281B0B29";
+    var address = "0xC8Dbd7763c2D27245F0D5587749e72e0fBD9c528";
     if (true) {
       window.ethereum
         .request({
