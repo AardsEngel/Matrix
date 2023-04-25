@@ -170,6 +170,7 @@ class MyApp extends PolymerElement {
             </app-toolbar>
           </app-header>
           <paper-tabs selected="{{page}}" attr-for-selected="name" style="color: #eeeeee; height: 30px;"><paper-tab name="con-faucet" style="font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; font-size: 20px;">Matrix Game</paper-tab></paper-tabs>
+          <paper-tabs selected="{{page}}" attr-for-selected="name" style="color: #eeeeee; height: 30px;"><paper-tab name="con-trade" style="font-family: 'Open Sans Condensed', sans-serif; font-weight: bold; font-size: 20px;">Trade</paper-tab></paper-tabs>
           <marquee style="background-color: #042138; color: #eeeeee; font-family: 'Open Sans Condensed', sans-serif;"><img src="./images/logo.png" width="13px" heigth="13px" style="margin-right: 5px;">Token Supply: {{confs}}</marquee>
           <center>
             <template is="dom-if" if="{{!metam}}">
@@ -192,10 +193,6 @@ class MyApp extends PolymerElement {
       </app-drawer-layout>
       <div class="flex-horizontal" style="background: #212121">
         <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Visit MafiaMatrix!</p>
-        <paper-fab icon="icons:cached" on-click="openSwap"></paper-fab>
-      </div>
-      <div class="flex-horizontal" style="background: #212121">
-        <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Trade on !</p>
         <paper-fab icon="icons:cached" on-click="openSwap"></paper-fab>
       </div>
       
