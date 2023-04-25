@@ -142,7 +142,7 @@ class MyApp extends PolymerElement {
 
       <block-provider provider="{{web}}" metamask="{{metam}}"></block-provider>
       <token-contract provider="{{web}}" address="0x15071e3cd81bbe97f6308383b98c5865dc731143" supply="{{con}}"></token-contract>
-      <faucet-contract provider="{{web}}" address="0xfcdf13f43033add2026343d89be0b1578bbc3e4e" supply="{{confs}}" contract="{{concontract}}"></faucet-contract>
+      <faucet-contract provider="{{web}}" address="0xa7990a605f5e41b244a707881a6c7a81fb34bf38" supply="{{confs}}" contract="{{concontract}}"></faucet-contract>
       
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
       </app-location>
@@ -192,6 +192,10 @@ class MyApp extends PolymerElement {
       </app-drawer-layout>
       <div class="flex-horizontal" style="background: #212121">
         <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Visit MafiaMatrix!</p>
+        <paper-fab icon="icons:cached" on-click="openSwap"></paper-fab>
+      </div>
+      <div class="flex-horizontal" style="background: #212121">
+        <p style="margin-right: 10px; margin-left: 10px; font-family: 'Dosis', sans-serif;">Trade on !</p>
         <paper-fab icon="icons:cached" on-click="openSwap"></paper-fab>
       </div>
       

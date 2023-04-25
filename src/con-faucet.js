@@ -65,7 +65,7 @@
          <div class="flex-vertical">
            <img src="{{levelimg}}" width="115px" height="115px">
            <p>User Level: {{userlevel}}</p>
-           <paper-button on-click="buy" raised style="background-color: #042138; color: #fff;">Buy Level (25 DOGE)</paper-button>
+           <paper-button on-click="buy" raised style="background-color: #042138; color: #fff;">Buy Level</paper-button>
          </div>
          <div class="flex"></div>
          <div class="flex-vertical">
