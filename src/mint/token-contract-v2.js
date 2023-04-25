@@ -26,7 +26,7 @@ class TokenContractV2 extends PolymerElement {
         
         var utils = web3.utils; var balance; var name;
 
-        await contract.methods.balanceOf('0x8D71f14aF3c689f60d554E51e1bf3015281B0B29').call(function (err, bal) {
+        await contract.methods.balanceOf('0x15071e3cd81bbe97f6308383b98c5865dc731143').call(function (err, bal) {
             if(err) { console.error(err) }
             if(bal) { balance = (utils.fromWei(bal, 'microether')) }
         });

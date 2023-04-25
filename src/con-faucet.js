@@ -85,7 +85,7 @@
        <div class="card flex-vertical" style="background-color: #225277;">
         <div class="flex-horizontal" style="width: 100%;">
           <div class="flex"></div>
-          <p style="font-size: 12px;">25 DOGE to buy a level.</p>
+          <p style="font-size: 12px;">100 MintMe to buy a level.</p>
           <div class="flex"></div>
           <p style="font-size: 12px;">Timer decreases as you rank up.</p>
           <div class="flex"></div>
@@ -126,7 +126,7 @@
 
    async addToken() {
     var type = "ERC20"; var symbol = "$DM"; var decimals = "8"; var image = "https://i.imgur.com/8zi3OUL.png";
-    var address = "0xC8Dbd7763c2D27245F0D5587749e72e0fBD9c528";
+    var address = "0x15071e3cd81bbe97f6308383b98c5865dc731143";
     if (true) {
       window.ethereum
         .request({
@@ -160,7 +160,7 @@
      await this.contract.methods.buyLevel()
      .send({
        from: this.provider.eth.defaultAccount,
-       value: utils.toWei("25", "ether")
+       value: utils.toWei("100", "ether")
      });
      this.dripcount = await this.contract.methods.getDripCount()
      .call({from: this.provider.eth.defaultAccount});

@@ -23,13 +23,13 @@ class BlockProvider extends PolymerElement {
           temp_web3 = new Web3(web3.currentProvider);
         } else {
           temp_web3 = new Web3();
-          temp_web3.setProvider(new temp_web3.providers.HttpProvider('https://rpc01.dogechain.dog')); 
+          temp_web3.setProvider(new temp_web3.providers.HttpProvider('https://node1.mintme.com')); 
         }  
 
         try {
           await window.ethereum.request({
             method: "wallet_switchEthereumChain",
-            params: [{ chainId: "0x7D0" }],
+            params: [{ chainId: "0x609E" }],
           });
         } catch (switchError) {
           // This error code indicates that the chain has not been added to MetaMask.
@@ -39,18 +39,18 @@ class BlockProvider extends PolymerElement {
                 method: "wallet_addEthereumChain",
                 params: [
                   {
-                    chainId: "0x7D0",
-                    chainName: "Dogechain",
+                    chainId: "0x609E",
+                    chainName: "MintMe",
                     nativeCurrency: {
-                      name: "Dogecoin",
-                      symbol: "DOGE",
-                      decimals: 18,
+                      name: "MintMe",
+                      symbol: "MINTME",
+                      decimals: 12,
                     },
                     rpcUrls: [
-                      "https://rpc01.dogechain.dog",
-                      "https://rpc02.dogechain.dog",
+                      "https://node1.mintme.com",
+                      "https://node1.mintme.com",
                     ],
-                    blockExplorerUrls: ["https://explorer.dogechain.dog"],
+                    blockExplorerUrls: ["https://www.mintme.com/explorer/"],
                   },
                 ],
               });

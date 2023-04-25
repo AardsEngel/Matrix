@@ -141,8 +141,8 @@ class MyApp extends PolymerElement {
       </style>
 
       <block-provider provider="{{web}}" metamask="{{metam}}"></block-provider>
-      <token-contract provider="{{web}}" address="0xC8Dbd7763c2D27245F0D5587749e72e0fBD9c528" supply="{{con}}"></token-contract>
-      <faucet-contract provider="{{web}}" address="0xfa37e9004220F4dd210e8306Bc699DBf902c01de" supply="{{confs}}" contract="{{concontract}}"></faucet-contract>
+      <token-contract provider="{{web}}" address="0x15071e3cd81bbe97f6308383b98c5865dc731143" supply="{{con}}"></token-contract>
+      <faucet-contract provider="{{web}}" address="0xfcdf13f43033add2026343d89be0b1578bbc3e4e" supply="{{confs}}" contract="{{concontract}}"></faucet-contract>
       
       <app-location route="{{route}}" url-space-regex="^[[rootPath]]">
       </app-location>
